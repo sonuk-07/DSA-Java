@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84734b82-54ac-49a2-b67d-05763eb94233" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Arrays/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arrays/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arrays/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arrays/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arrays/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arrays/Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arrays/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arrays/src/ReverseArray.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Arrays" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2z5tmceeqv4EJw13UHWifQOtWns" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/sonu/DSA-Java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84734b82-54ac-49a2-b67d-05763eb94233" name="Changes" comment="" />
+      <created>1751032921877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751032921877</updated>
+    </task>
+    <servers />
+  </component>
+</project>
