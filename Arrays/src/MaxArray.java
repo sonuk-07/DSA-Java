@@ -9,13 +9,13 @@ public class MaxArray {
     }
 
     static int max(int[] arr) {
-        int max = Integer.MIN_VALUE;
+        int maxi = Integer.MIN_VALUE;
         for (int num : arr) {
-            if (num > max) {
-                max = num;
+            if (num > maxi) {
+                maxi = num;
             }
         }
-        return max;
+        return maxi;
     }
 
 }
