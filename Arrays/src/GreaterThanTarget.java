@@ -1,8 +1,6 @@
 // https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/
 
-import java.rmi.RMISecurityException;
-
-public class SmallestThanTarget {
+public class GreaterThanTarget {
     public static void main(String[] args) {
         char[] letters = {'x','x','y','y'};
         char target = 'c';
