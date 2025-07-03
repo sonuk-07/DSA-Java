@@ -1,3 +1,4 @@
+
 /* https://leetcode.com/problems/richest-customer-wealth/description/ */
 
 public class RichestCustomerWealth {
@@ -6,15 +7,17 @@ public class RichestCustomerWealth {
         int ans = maximumWealth(accounts);
         System.out.println(ans);
     }
+
+    // Find max wealth: sum each row, track the largest sum
     static int maximumWealth(int[][] accounts){
         int max = Integer.MIN_VALUE;
         for(int[] array : accounts){
             int wealth = 0;
             for(int num : array){
-                wealth = wealth + num;
+                wealth = wealth + num; // Sum current customer's accounts
             }
             if(wealth > max){
-                max = wealth;
+                max = wealth; // Update richest customer
             }
         }
         return max;

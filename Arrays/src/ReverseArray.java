@@ -8,13 +8,13 @@ public class ReverseArray {
         System.out.println("Reversed Array: " + Arrays.toString(arr));
     }
 
+    // Two-pointer approach: swap elements from both ends moving inward
     static void reverse(int[] arr) {
         int left = 0, right = arr.length - 1;
         while (left < right) {
             int temp = arr[left];
-            arr[left++] = arr[right];
+            arr[left++] = arr[right];  // Swap and move pointers
             arr[right--] = temp;
         }
     }
 }
-
