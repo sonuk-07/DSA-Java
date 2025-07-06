@@ -9,7 +9,7 @@ public class SearchInRotatedSortedArray {
 
     // Main search function for rotated sorted array (no duplicates)
     static int search(int[] arr, int target) {
-        int pivot = findPivot(arr);
+        int pivot = findPivotWithoutDuplicates(arr);
 
         // If no rotation (pivot == -1), array is fully sorted → normal binary search
         if (pivot == -1) {
@@ -34,7 +34,7 @@ public class SearchInRotatedSortedArray {
     }
 
     // Find the index of the pivot (the largest element before the rotation point)
-    static int findPivot(int[] arr) {
+    static int findPivotWithoutDuplicates(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
@@ -63,6 +63,43 @@ public class SearchInRotatedSortedArray {
         // No pivot found → array is not rotated
         return -1;
     }
+
+    static int findPivotWithDuplicates(int[] arr) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+
+            if (mid < end && arr[mid] > arr[mid + 1]) {
+                return mid;
+            }
+
+            if (mid > start && arr[mid] < arr[mid - 1]) {
+                return mid - 1;
+            }
+
+            // If elements at start, mid, end are equal — we can't determine the pivot side → shrink
+            if (arr[start] == arr[mid] && arr[mid] == arr[end]) {
+                // Skip duplicates
+                if (start < end && arr[start] > arr[start + 1]) return start;
+                start++;
+
+                if (end > start && arr[end - 1] > arr[end]) return end - 1;
+                end--;
+            }
+            // Left side is sorted, pivot must be right
+            else if (arr[start] < arr[mid] || (arr[start] == arr[mid] && arr[mid] > arr[end])) {
+                start = mid + 1;
+            }
+            else {
+                end = mid - 1;
+            }
+        }
+
+        return -1;
+    }
+
 
     // Standard binary search in a sorted portion of array
     static int binarySearch(int[] arr, int target, int start, int end) {
